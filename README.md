@@ -2,24 +2,24 @@
 
 ```text
 AuthKitty/
-├── assets/                                            # Static assets (icons, images, fonts)
+├── assets/                                           # Static assets (icons)
 │
-├── src/                                               # Main source code
-│   ├── auth/                                          # Authentication module
-│   │   ├── components/                               # Auth-related layouts/components
+├── src/                                              # Main source code
+│   ├── auth/                                         # Authentication
+│   │   ├── components/                               # Authentication related layouts/components
 │   │   │   └── AuthLayout.tsx                        # Authentication page layout
 │   │   │
-│   │   ├── hooks/                                    # Auth custom hooks
+│   │   ├── hooks/                                    # Authentication hooks
 │   │   │   └── useAuth.ts                            # Authentication state & logic
 │   │   │
-│   │   └── modals/                                   # Authentication screens/modals
-│   │       ├── SignIn.tsx                            # User sign-in page
-│   │       └── SignUp.tsx                            # User registration page
+│   │   └── modals/                                   # Authentication screens
+│   │       ├── SignIn.tsx                            # User sign-up page
+│   │       └── SignUp.tsx                            # User sign-in page
 │   │
-│   ├── dash/                                         # Dashboard module
+│   ├── dash/                                         # Dashboard
 │   │   ├── components/                               # Dashboard layouts
 │   │   │   ├── DashboardLayout.tsx                   # Main dashboard layout
-│   │   │   └── DrawerLayout.tsx                      # Sidebar drawer layout
+│   │   │   └── DrawerLayout.tsx                      # Sidebar Settings drawer layout
 │   │   │
 │   │   ├── hooks/                                    # Dashboard hooks
 │   │   │   ├── useAccounts.ts                        # Account management hook
@@ -28,18 +28,18 @@ AuthKitty/
 │   │   ├── modals/                                   # Dashboard modal dialogs
 │   │   │   ├── AccountAddModal.tsx                   # Add account modal
 │   │   │   ├── AccountEditModal.tsx                  # Edit account modal
-│   │   │   ├── AccountDeleteModal.tsx                # Delete account confirmation
-│   │   │   ├── AccountAlertModal.tsx                 # Alert modal
-│   │   │   └── AccountSettingsModal.tsx              # Account settings modal
+│   │   │   ├── AccountDeleteModal.tsx                # Delete account confirmation modal
+│   │   │   ├── AccountAlertModal.tsx                 # Alert account modal (worning, errors, alerts etc)
+│   │   │   └── AccountSettingsModal.tsx              # Account all settings drawer modal
 │   │   │
 │   │   └── ui/                                       # Reusable dashboard UI
 │   │       ├── AccountCard.tsx                       # Account card component
 │   │       ├── AccountIcon.tsx                       # Account icon component
 │   │       ├── CircularProgress.tsx                  # Loading progress indicator
-│   │       └── ToastContainer.tsx                    # Notification container
+│   │       └── ToastContainer.tsx                    # ToastContainer component
 │   │
 │   ├── hooks/                                        # Global custom hooks
-│   │   ├── useToast.ts                               # Toast notification hook
+│   │   ├── useToast.ts                               # Toast hook
 │   │   └── useTotp.ts                                # TOTP generation hook
 │   │
 │   ├── types/                                        # TypeScript type definitions
